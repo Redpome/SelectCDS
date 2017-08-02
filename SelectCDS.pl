@@ -52,7 +52,6 @@ while(<E>){
 				my @Pro=split(/\*/,$aa);
 				my$an=grep/^*/,@Pro;
 				if (($an eq 1) and ($al eq $seqnum)) {
-                     $seq=~s/...$//g;
 					 print O ">$id\n$seq\n";
                 }
                 else {
